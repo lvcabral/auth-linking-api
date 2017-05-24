@@ -1,10 +1,169 @@
+
+
+/* NEOD Second Screen */
+
+a,
+article,
+body,
+div,
+footer,
+form,
+h2,
+header,
+html,
+img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline
+}
+
+html {
+	line-height: 1
+}
+
+article,
+footer,
+header,
+main {
+	display: block
+}
+
+form .button,
+form input {
+	vertical-align: top;
+	-moz-box-sizing: initial;
+	box-sizing: initial
+}
+
+form input {
+	border-radius: 0
+}
+
+form input:focus {
+	outline: 0
+}
+
+form input::-ms-clear {
+	display: none
+}
+
+form .form-submit {
+	-webkit-appearance: none
+}
+
+.textfield-code {
+	font-family: inherit;
+	font-size: 1rem;
+	font-weight: 600;
+	text-align: center;
+	padding: 0 8px;
+	height: 2.8rem;
+	border: 2px solid transparent;
+	outline-width: 0
+}
+
+main form .content :not(:last-child) {
+	margin-bottom: 10px
+}
+
+@media (min-width:531px) {
+	main form .content :not(:last-child) {
+		margin-right: 10px
+	}
+}
+
+main .button {
+	position: relative;
+	cursor: pointer;
+	text-decoration: none;
+	display: inline-block;
+	border: 3px solid transparent;
+	font-size: 1rem;
+	padding: .85rem 22px
+}
+
+#header {
+	z-index: 2;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	line-height: 5rem;
+	height: 5rem;
+	margin-bottom: 2.5rem;
+	font-size: 32px;
+	border-top: 7px solid transparent
+}
+
+body {
+	margin-top: 7.5rem
+}
+
+main {
+	margin: 0 2rem
+}
+
+article {
+	max-width: 1000px;
+	margin: 2rem auto;
+	text-align: center;
+	font-size: 0;
+	position: relative
+}
+
+article h2 {
+	margin-bottom: 1.9rem;
+	line-height: 1.3em;
+	font-size: .9rem;
+	font-weight: 300
+}
+
+article footer {
+	font-size: 10px;
+	line-height: 1.8em;
+	text-align: center;
+	margin: 40px auto .5rem;
+	padding-top: 40px;
+	border-top: 1px solid transparent;
+	max-width: 320px
+}
+
+#header {
+	-webkit-transition: background-color .25s ease .1s, color .15s ease 0s, border-color .25s ease .1s;
+	transition: background-color .25s ease .1s, color .15s ease 0s, border-color .25s ease .1s
+}
+
+article {
+	-webkit-transition: opacity .25s ease 0s;
+	transition: opacity .25s ease 0s
+}
+
+input {
+	-webkit-transition: border .25s ease 0s, box-shadow .25s ease 0s;
+	transition: border .25s ease 0s, box-shadow .25s ease 0s
+}
+
+.button {
+	-webkit-transition: color .25s ease 0s, background-color .25s ease 0s, border-color .25s ease 0s;
+	transition: color .25s ease 0s, background-color .25s ease 0s, border-color .25s ease 0s
+}
+
+.message-container {
+	text-align: center;
+	margin: -15px auto 0;
+	line-height: 16px;
+	position: absolute;
+	top: 5rem;
+	width: 100%
+}
+
 /* NEOD Second Screen */
 
 article.activation-page {
     max-width: 304px
-}
-article.activation-page.auto-submit {
-    opacity: 0
 }
 article.activation-page h2 {
     padding: 0 1rem
@@ -41,135 +200,9 @@ article.activation-page .helpLink {
     }
 }
 @media (max-height: 300px) {
-    body.activate #header,
-    body.activate .background {
+    body.activate #header {
         position: absolute
     }
-}
-article.error-page h2.title {
-    font-size: 1.52rem;
-    font-weight: 600
-}
-article.error-page h2.subtitle {
-    line-height: 1.25rem;
-    font-size: 1rem
-}
-article.kaleidoscope-page {
-    max-width: none;
-    margin: -2.5rem -2rem 0;
-    position: static
-}
-body.kaleidoscope {
-    background-attachment: initial
-}
-body.kaleidoscope #header {
-    position: absolute
-}
-body.kaleidoscope .header-outer {
-    display: none
-}
-.header-all-providers,
-.header-search-providers {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0
-}
-.header-all-providers h2,
-.header-search-providers h2 {
-    font-size: 1.1rem;
-    font-weight: 300;
-    height: 5rem
-}
-.header-search-providers>.button-container {
-    right: -1.3rem
-}
-.header-search-providers .icon-button:hover,
-.header-search-providers .text-button:hover {
-    color: #000
-}
-body.providers .device .header-device,
-body.providers .header-device,
-body.providers .header-logo {
-    display: none
-}
-body.providers.search .header-search-providers,
-body.providers:not(.search) .header-all-providers {
-    display: block
-}
-article.top-providers-page {
-    display: block;
-    max-width: 26rem
-}
-body.preselected article.top-providers-page,
-body.providers article.top-providers-page,
-body.returning article.top-providers-page {
-    display: none
-}
-@media (max-width: 530px) {
-    article.top-providers-page .provider-buttons {
-        max-width: 460px
-    }
-}
-article.preselected-provider-page,
-article.returning-user-page {
-    display: none;
-    max-width: 26rem
-}
-article.preselected-provider-page h2,
-article.returning-user-page h2 {
-    margin-bottom: 0
-}
-article.preselected-provider-page h2+a,
-article.returning-user-page h2+a {
-    margin-top: 2rem
-}
-article.preselected-provider-page .returning-provider-name,
-article.returning-user-page .returning-provider-name {
-    font-weight: 500
-}
-article.preselected-provider-page .returning-provider-name:hover,
-article.returning-user-page .returning-provider-name:hover {
-    color: #FFF
-}
-article.preselected-provider-page .provider-alternate-link,
-article.returning-user-page .provider-alternate-link {
-    display: block;
-    font-size: .7rem;
-    margin-top: 1.5rem;
-    text-decoration: none
-}
-body.preselected article.preselected-provider-page,
-body.returning article.returning-user-page {
-    display: block
-}
-article.all-providers-page {
-    display: none;
-    max-width: none;
-    margin-top: -2.35rem
-}
-body.providers article.all-providers-page {
-    display: block
-}
-@media (min-height: 1080px) {
-    article.all-providers-page {
-        margin-bottom: 10rem
-    }
-}
-article.success-page {
-    max-width: 20rem
-}
-@media (max-width: 530px) {
-    article.success-page {
-        max-width: 15rem
-    }
-}
-.genregcode-page label {
-    display: block;
-    font-size: 1rem;
-    margin: 1rem 0
 }
 html {
     font-family: Helvetica, Arial, sans-serif;
@@ -188,16 +221,6 @@ body {
     background: #000;
     border-color: #0067A3;
 }
-.browsehappy {
-    background: #0067A3
-}
-.browsehappy,
-.browsehappy a {
-    color: #FFF
-}
-article .bottom-fade-below {
-    background: #000
-}
 article a {
     color: #0067A3
 }
@@ -208,24 +231,16 @@ article footer {
 .textfield-code.textfield-default {
     color: #A3A3A3
 }
-.textfield-code.error {
-    border-color: #0067A3;
-    color: #0067A3
-}
 main .button {
     color: #FFF;
     background-color: #000;
     border-color: #FFF;
     font-weight: 600
 }
-main .button.provider-button {
-    border-width: 1px
-}
 main .button.provider-button:not(:hover):not(:active) {
     background: #000;
     border-color: #333
 }
-main .button.form-submit.inactive,
 main .button.form-submit:not(:hover):not(.active) {
     color: #333;
     border-color: #333
@@ -234,26 +249,4 @@ main .button:active:not(.inactive),
 main .button:hover:not(.inactive) {
     color: #FFF;
     background-color: #474747
-}
-main .loader {
-    border-color: #724f4a #724f4a #724f4a #0067A3
-}
-.provider-list-header {
-    background: rgba(35, 35, 35, .8)
-}
-.provider-list-item {
-    color: #0067A3
-}
-.jump-list-link-letter {
-    color: #A3A3A3
-}
-.jump-list-link-letter:hover {
-    color: #FFF
-}
-.mvpd-container {
-    background: #242526;
-    border-color: #0067A3
-}
-.mvpd-container .close-button:hover {
-    color: #0067A3
 }
