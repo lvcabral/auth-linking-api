@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Activate Channel</title>
+      <meta name="robots" content="noindex, nofollow">
+      <link rel="stylesheet" href="./css/shared.css">
+      <link rel="stylesheet" href="./css/main.css">
+      <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico"> 
+   </head>
+   <body class="activate">
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", function(event) { 
+                // submit input link
+                var form = document.getElementById('activation');
+                document.getElementById('btn-submit').addEventListener('click', function () {
+                  form.submit();
+                });
+            })
+      </script>
+      <div align="center">
+        <img src="./images/your-logo-here.png" />
+      </div>
+      <header id="header">
+         <div class="message-container">Link Roku Channel to your Account</div>
+      </header>
+      <main role="main">
+         <article class="page-wrapper activation-page">
+            <h2>Enter the activation code displayed on your TV screen.</h2>
+            <form id="activation" class="activation" method="post" action="/token">
+               <div class="content">
+                 <input id="code" name="code" class="textfield textfield-code type-code textfield-default" 
+                    type="text" autocomplete="off" autocorrect="off" maxlength="5"
+                    placeholder="Code" value=""><br/><br/>
+                <h2>The token you will enter below shall be provided by the service you are linking your channel to.</h2><br/>
+                 <input type="text" id="oauth" name="oauth" value="" placeholder="OAuth token" class="textfield" >
+               <a href="#" class="button form-submit active" type="submit" id="btn-submit">Submit</a></div>
+               <a class="helpLink" target="_blank" href="http://lvcabral.com/roku">Check my Roku Channels</a>
+            </form>
+            <footer class="footer">
+               <div class="footer-inner">© 2017 Marcelo Lv Cabral - All Rights Reserved.<br></div>
+            </footer>
+         </article>
+      </main>
+   </body>
+</html>

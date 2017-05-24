@@ -1,0 +1,29 @@
+{
+  "name": "auth-linking-api",
+  "version": "1.0.0",
+  "description": "Sample API for authentication and linking to a Roku Channel",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lvcabral/auth-linking-api"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marcelo Lv Cabral <marcelo@lvcabral.com> (http://lvcabral.com)",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "checkdigit": "^1.1.1",
+    "debug": "^2.6.8",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "mongodb": "^2.2.26",
+    "unique-random": "^1.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-zip": "^3.0.2",
+    "minimist": "^1.2.0"
+  }
+}

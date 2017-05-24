@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Browse Activation Data</title>
+</head>
+<body>
+  <h2>Codes</h2>
+  <ul>
+  <% for(var i=0; i<codes.length; i++) {%>
+    <li>
+      <span><%= codes[i].deviceId %>, <%= codes[i].code %>, <%= codes[i].createdAt %></span>
+    </li>
+  <% } %>
+  </ul>
+  <br/>
+  <h2>Tokens</h2>
+  <ul>
+  <% for(var i=0; i<tokens.length; i++) {%>
+    <li>
+      <span><%= tokens[i].deviceId %>, <%= tokens[i].oauth %></span>
+    </li>
+  <% } %>
+  </ul>
+</body>
+</html>
