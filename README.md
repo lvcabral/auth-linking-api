@@ -61,16 +61,28 @@ $ touch gulpfile.js
 
 Edit channel source-code **/components/SimpleScene.brs** 
 
-**Lines 24-26**: Replace with the API endpoints URL
+**Lines 24-26**: Replace the server info with the API endpoints URL
 ```BrightScript
   m.gen = "http://YOUR-SERVER-URL:3000/generate?token=" + m.rokuDeviceID
   m.auth = "http://YOUR-SERVER-URL:3000/authenticate?token=" + m.rokuDeviceID
   m.dis = "http://YOUR-SERVER-URL:3000/disconnect?token=" + m.rokuDeviceID
 ```
 
-**Line 74**: Replace with the activation page URL
+**Line 74**: Replace server info with the activation page URL
 ```BrightScript
   m.HowTo.text = "Go to 'http://YOUR-SERVER-URL:3000/activate' on a web browser and enter the following code to connect:"
+```
+
+**Line 30** from the file **/components/SimpleScene.xml** replace server info with the activation page URL
+```XML
+<Label
+      id="HowTo"
+      font="font:MediumBoldSystemFont"
+      height="1000"
+      width="1000"
+      wrap="true"
+      text="Go to 'http://YOUR-SERVER-URL:3030/activate' on a web browser and enter the following code to connect:"
+      translation="[500,470]" />
 ```
 
 ## License
