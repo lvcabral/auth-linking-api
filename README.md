@@ -10,7 +10,7 @@ This NodeJS app implements a simple server-side authentication and linking API f
     Returns the OAuth token associated to the device id provided. (returns an empty string for invalid ids)
 3.	(get) /disconnect?token=[device id]
     Returns a json indicating the success of the disconnect operation
-4.	(post) /authenticate  
+4.	(post) /activate  
     Endpoint to the form where the user enter the activation key
 5.	(get) /browse -- DEBUG mode only  
     Shows a page with a list of the codes and a list of tokens from the database
