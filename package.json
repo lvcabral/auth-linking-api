@@ -18,7 +18,7 @@
     "debug": "^2.6.8",
     "ejs": "^2.5.6",
     "express": "^4.15.2",
-    "mongodb": "^2.2.26",
+    "mongodb": "^3.6.1",
     "unique-random": "^1.0.0"
   },
   "devDependencies": {
